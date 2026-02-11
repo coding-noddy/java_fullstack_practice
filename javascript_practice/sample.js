@@ -14,8 +14,8 @@ function iterateWithForOf(arrOrStr) {
     }
 }
 
-iterateWithForOf("javascript");
-iterateWithForOf([10, 20, 40, 80, 160]);
+// iterateWithForOf("javascript");
+// iterateWithForOf([10, 20, 40, 80, 160]);
 
 function iterateWithForIn(arrOrObjOrStr) {
     for(const key in arrOrObjOrStr) {
@@ -23,6 +23,20 @@ function iterateWithForIn(arrOrObjOrStr) {
     }
 }
 
-iterateWithForIn({id: 10, name: "Fareen", ["Salary in Rs."]: 10000});
-iterateWithForIn([40,80,160,90,80]);
-iterateWithForIn("Javascript");
+// iterateWithForIn({id: 10, name: "Fareen", ["Salary in Rs."]: 10000});
+// iterateWithForIn([40,80,160,90,80]);
+// iterateWithForIn("Javascript");
+
+
+// check if x is vowel or not
+function skipVowels(str) {
+    const vowels = ['a','e','i','o','u'];
+    for(const c of str) {
+        if(vowels.includes(c.toLowerCase())) {
+            continue;
+        }
+        console.log(c);
+    }
+}
+
+skipVowels("I love javascript from bottom of my heart");
